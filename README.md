@@ -6,6 +6,13 @@ This is the second project for Bld intern where I have to create some parts of u
 
 I have used React as a frontend framework, also I have used Tailwind for the first time as my CSS framework.
 
+## necessary step:
+
+You will have to run
+
+### json-server --watch src/data/db.json --port 3004
+so you have your db running on port 3004
+
 ## Available Scripts
 
 In the project directory, you can run:
