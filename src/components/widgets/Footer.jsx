@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo-udemy-white.svg";
+import logo from "../../assets/logo-udemy-white.svg";
 function Footer() {
   return (
     <div className=" bg-zinc-800 h-14 text-white">

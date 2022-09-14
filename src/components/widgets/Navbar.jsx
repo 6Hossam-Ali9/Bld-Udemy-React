@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo-udemy-black.svg";
+import logo from "../../assets/logo-udemy-black.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,

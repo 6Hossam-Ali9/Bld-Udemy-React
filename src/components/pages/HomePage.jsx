@@ -1,6 +1,6 @@
 import React from "react";
-import CoursesContainer from "../components/CoursesContainer";
-import cat from "../assets/cat-main.png";
+import CoursesContainer from "../widgets/CoursesContainer";
+import cat from "../../assets/cat-main.png";
 
 function HomePage({ data }) {
   return (
