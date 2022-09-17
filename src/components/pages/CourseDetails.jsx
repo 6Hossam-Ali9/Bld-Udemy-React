@@ -7,6 +7,7 @@ import Objectives from "../widgets/Objectives";
 import Curriculum from "../widgets/Curriculum";
 import SectionLayout from "../widgets/SectionLayout";
 import AddStars from "../widgets/AddStars";
+import Reviews from "../widgets/Reviews";
 
 import Preview from "../widgets/Preview";
 function CourseDetails() {
@@ -93,7 +94,7 @@ function CourseDetails() {
               <p className="leading-[48px]">instructor</p>
             </a>
             <a
-              href="#overview"
+              href="#reviews"
               className="capitalize w-[172px] text-center h-12 hover:border-b-2 border-zinc-900 hover:text-zinc-900"
             >
               <p className="leading-[48px]">reviews</p>
@@ -114,7 +115,7 @@ function CourseDetails() {
           </div>
         </SectionLayout>
       </section>
-      <section className="w-full" id="curriculum">
+      <section className="w-full mb-8" id="curriculum">
         <SectionLayout>
           <h2 className="font-bold text-2xl mb-4">Course content</h2>
           <div className="text-sm flex flex-row justify-between my-2">
@@ -134,6 +135,11 @@ function CourseDetails() {
               return <Curriculum course={course} expanded={expand} key={idx} />;
             })}
           </div>
+        </SectionLayout>
+      </section>
+      <section className="w-full" id="reviews">
+        <SectionLayout>
+          <Reviews />
         </SectionLayout>
       </section>
     </>
