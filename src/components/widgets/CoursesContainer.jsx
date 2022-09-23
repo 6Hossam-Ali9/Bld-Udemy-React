@@ -1,10 +1,9 @@
 import Course from "./Course";
 import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 function CoursesContainer({ data }) {
-  const get = window.location.search;
-  const params = new URLSearchParams(get);
-  const [search, setSearch] = useState(params.get("search"));
-
+  const [searchParams, setSearchParams] = useSearchParams();
+  const search = searchParams.get("search");
   const [course, setCourse] = useState("python");
   const [courses, setCourses] = useState([]);
   const { header, description, title } = course ? data[course] : "";
@@ -45,7 +44,7 @@ function CoursesContainer({ data }) {
           }`}
           onClick={() => {
             setCourse("python");
-            setSearch("");
+            setSearchParams();
           }}
         >
           Python
@@ -56,7 +55,7 @@ function CoursesContainer({ data }) {
           }`}
           onClick={() => {
             setCourse("excel");
-            setSearch("");
+            setSearchParams();
           }}
         >
           Excel
@@ -67,7 +66,7 @@ function CoursesContainer({ data }) {
           }`}
           onClick={() => {
             setCourse("web");
-            setSearch("");
+            setSearchParams();
           }}
         >
           Web Development
@@ -78,7 +77,7 @@ function CoursesContainer({ data }) {
           }`}
           onClick={() => {
             setCourse("javascript");
-            setSearch("");
+            setSearchParams();
           }}
         >
           JavaScript
@@ -89,7 +88,7 @@ function CoursesContainer({ data }) {
           }`}
           onClick={() => {
             setCourse("data");
-            setSearch("");
+            setSearchParams();
           }}
         >
           Data Science
@@ -100,7 +99,7 @@ function CoursesContainer({ data }) {
           }`}
           onClick={() => {
             setCourse("aws");
-            setSearch("");
+            setSearchParams();
           }}
         >
           AWS Certification
@@ -111,7 +110,7 @@ function CoursesContainer({ data }) {
           }`}
           onClick={() => {
             setCourse("drawing");
-            setSearch("");
+            setSearchParams();
           }}
         >
           Drawing

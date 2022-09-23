@@ -10,7 +10,7 @@ function ReviewHeader({ review: { first_name, last_name, rate } }) {
       </p>
       <div className="flex flex-col">
         <p className="font-bold">
-          {first_name} {last_name}.
+          {first_name} {last_name[0]}.
         </p>
         <div className="flex items-center">
           <AddStars rating={rate} />

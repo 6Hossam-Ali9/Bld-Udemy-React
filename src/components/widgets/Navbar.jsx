@@ -15,8 +15,7 @@ function Navbar() {
   const [text, setText] = useState("");
   const submiteHandler = (e) => {
     e.preventDefault();
-    navigate(`/?search=${text}`);
-    window.location.reload(false);
+    navigate(text ? `/?search=${text}` : "/");
   };
   return (
     <nav className="h-[72px] usm:h-[56px] shadow-md z-10 bg-white relative">
