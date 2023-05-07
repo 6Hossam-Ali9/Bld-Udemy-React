@@ -1,11 +1,8 @@
 import "./App.css";
-import CoursesContainer from "./components/CoursesContainer";
+import Main from "./components";
+
 function App() {
-  return (
-    <>
-      <CoursesContainer />;
-    </>
-  );
+  return <Main />;
 }
 
 export default App;
